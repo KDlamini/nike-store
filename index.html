@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Nike</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./public/images/logo.png" class="logo"/></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <ul class="social">
+            <li><a href="https://www.facebook.com/Starbucks/" target="_blank"><img src="./public/images/facebook.png"></a></li>
+            <li><a href="https://twitter.com/Starbucks" target="_blank"><img src="./public/images/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/starbucks_sa" target="_blank"><img src="./public/images/instagram.png"></a></li>
+        </ul>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>Run for one million.<br/> 
+                    <span class="brandName">Nike</span></h2>
+                <p>Just Do it!</p>
+                <a href="#" class="textBoxButton" onmouseover="textButtonHover()">Shop Now</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="./public/images/img2.png" alt="" class="nikeSneakerImg">
+            </div>
+        </div>
+
+        <ul class="thumbnails">
+            <li>
+                <img 
+                    src="./public/images/thumb1.png" 
+                    onclick="imageSlider('./public/images/img1.png');
+                            changeCircleColor('#A0271A', '#0B4783')"
+                >
+            </li>
+            <li>
+                <img 
+                    src="./public/images/thumb2.png" 
+                    onclick="imageSlider('./public/images/img2.png');
+                            changeCircleColor('#2C2C2C', '#90CD18')"
+                >
+            </li>
+            <li>
+                <img 
+                    src="./public/images/thumb3.png" 
+                    onclick="imageSlider('./public/images/img3.png');
+                            changeCircleColor('#304682', '#E95507')"
+                >
+            </li>
+            <li>
+                <img 
+                    src="./public/images/thumb4.png" 
+                    onclick="imageSlider('./public/images/img4.png');
+                            changeCircleColor('#DB174E', '#d9d207')"
+                >
+            </li>
+            <li>
+                <img 
+                    src="./public/images/thumb5.png" 
+                    onclick="imageSlider('./public/images/img5.png');
+                            changeCircleColor('#415165', '#9C3235')"
+                >
+            </li>
+            <li>
+                <img 
+                    src="./public/images/thumb6.png" 
+                    onclick="imageSlider('./public/images/img6.png');
+                            changeCircleColor('#63686B', '#CEAF80')"
+                >
+            </li>
+        </ul>
+    </section>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
